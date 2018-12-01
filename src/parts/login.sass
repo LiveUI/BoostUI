@@ -1,0 +1,39 @@
+.login
+	width: 420px
+	max-width: 90%
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	&-forgot
+		margin-top: -5px
+		font-size: 11px
+		text-decoration: none
+		color: #364041
+		display: block
+		width: 100%
+		text-align: right
+	&-links
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-link
+		color: #236aea
+		font-size: 13px
+		text-decoration: none
+		padding: 8px 0
+		&:not(.login-link-submit)
+			svg
+				margin-right: 0.3em
+	&-error
+		color: #ff0000
+		font-size: 0.8em
+		display: flex
+		align-items: center
+		flex-shrink: 0
+		svg
+			margin-right: 0.5em
+	&-texts
+		display: flex
+		justify-content: space-between
+		align-items: center

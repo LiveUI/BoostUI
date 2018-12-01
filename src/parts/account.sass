@@ -1,0 +1,59 @@
+.account
+	text-align: center
+	&-photo
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		margin: 0 auto 2em
+		position: relative
+		&-image
+			width: 7rem
+			height: 7rem
+			img
+				width: 7rem
+				height: 7rem
+				border-radius: 50%
+				overflow: hidden
+		&-edit
+			width: 2rem
+			height: 2rem
+			background: #236aea
+			border-radius: 50%
+			border: 3px solid #ffffff
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			right: 0
+			bottom: 0
+	&-form
+		background: white
+		max-width: 550px
+		margin: 0 auto
+		padding: 30px 27px
+		border-radius: 3px
+		border: 1px solid #ddddde
+		&-item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 20px
+			&-label
+				color: #999999
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 11px
+			&-input
+				width: 60%
+				border: none
+				border-bottom: 1px solid #979797
+				padding: 8px 0
+				font-size: 16px
+				color: #364041
+				font-weight: 700
+				&:focus
+					outline: none
+		.button
+			width: 100%
+			margin-bottom: 0
+			margin-top: 2rem

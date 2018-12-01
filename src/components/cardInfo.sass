@@ -1,0 +1,81 @@
+.card-columns
+	padding: 20px
+	box-sizing: border-box
+
+.card-column
+	&:nth-child(2)
+		flex-grow: 1
+		margin-left: 1.9em
+		margin-right: 3.8em
+
+	&-name
+		margin: 0
+		font-size: 1.625em
+		font-weight: 700
+		color: #364041
+
+	&-id
+		font-size: 0.7em
+		font-weight: 400
+		color: #878787
+		margin: 0
+
+	&-description
+		font-size: 13px
+		line-height: 22px
+
+	&-icon .AppIcon
+		font-size: 170px
+
+	button.button
+		min-width: 0
+		width: 100%
+		.icon
+			fill: white
+
+	&-commit
+		background: #f8f9fa
+		border: 1px solid #cfd0d0
+		border-radius: 4px
+		padding: 20px
+		font-size: 0.7em
+		&-header
+			display: flex
+			justify-content: space-between
+			&-info
+				text-transform: uppercase
+				font-weight: 700
+				color: #959596
+				&-msg
+					color: #364041
+					margin-left: 0.5em
+			&-version
+				font-weight: 700
+				color: #364041
+		&-content
+			line-height: 1.6em
+			color: #000000
+			margin-bottom: 0
+
+	&-infobox
+		border: 1px solid #cfd0d0
+		border-radius: 4px
+		padding: 16px 0
+		&-item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin: 8px 20px
+			&-name
+				text-transform: uppercase
+				font-weight: 700
+				color: #999999
+				font-size: 11px
+				margin-right: 4em
+			&-value
+				color: #364041
+				font-weight: 700
+				white-space: nowrap
+	@media(max-width: 720px)
+		&:nth-child(2)
+			margin: 1em 0

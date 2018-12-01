@@ -1,0 +1,73 @@
+.card-content-list-item
+	margin: 17.5px 0
+	flex-grow: 0
+	flex-basis: calc(100% / 3 - 20px)
+	display: flex
+	border-radius: 4px
+	border: 1px solid #cfd0d0
+	background-color: #f9fafb
+	box-sizing: border-box
+	padding: 15px
+	cursor: pointer
+	transition: background 0.2s
+	text-decoration: none
+	align-items: center
+	&-image
+		display: flex
+		align-items: center
+	&-image .AppIcon
+		font-size: 62px
+	&-image img
+		width: 62px
+	&-text
+		align-self: flex-start
+		flex-grow: 1
+		margin: 0 1em
+		&-date
+			color: #878787
+			font-size: 0.7em
+		&-version
+			color: #364041
+			font-weight: 700
+		&-last
+			color: #236AEA
+			text-transform: uppercase
+			font-size: 0.7em
+			font-weight: 700
+	&-download
+		align-self: center
+		button
+			min-width: 0
+			margin: 0
+			transition: background 0.2s
+			svg
+				transition: fill 0.2s
+				fill: #236AEA
+	&-all
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		width: 100%
+		&-big, &-small
+			color: #236AEA
+			font-weight: 700
+			text-transform: uppercase
+		&-small
+			font-size: 0.7em
+			text-transform: none
+	&.is-active
+		border: 1px solid #75acea
+		background: #eaeff9
+	&:hover
+		background: #eaeff9
+		.card-content-list-item-download
+			button
+				background-color: #236aea
+				svg
+					fill: white
+	&.is-team
+		font-weight: 700
+
+	@media(max-width: 720px)
+		flex-basis: 100%

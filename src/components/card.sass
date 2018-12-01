@@ -1,0 +1,119 @@
+.card
+	background: white
+	max-width: 1200px
+	width: 90%
+	margin: 30px auto
+	border: 1px solid #ddddde
+	border-radius: 3px
+	&.card-columns
+		display: flex
+
+	&-header
+		border-bottom: 2px solid #eeeeee
+		display: flex
+		align-items: center
+		box-sizing: border-box
+		padding: 20px
+		justify-content: space-between
+		&-part
+			flex-basis: 0
+			flex-grow: 1
+			&:nth-child(2)
+				text-align: center
+			&:nth-child(3)
+				text-align: right
+
+			&-name
+				font-weight: 700
+				margin: 2px 0
+				&-icon
+					margin-left: 0.5em
+
+			&-id
+				font-size: 11px
+				color: #878787
+				margin: 2px 0
+
+			&-delete
+				color: #dd3a3a
+				cursor: pointer
+				font-size: 13px
+				display: flex
+				align-items: center
+				.shape-trash
+					margin-right: 8px
+
+			&-build
+				font-size: 11px
+				color: #878787
+
+	&-content
+		box-sizing: border-box
+		padding: 20px
+		&-list
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+
+		&-member
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border-bottom: 1px solid #ddddde
+			padding: 20px 0
+			&:last-child
+				border-bottom: none
+			&-info
+				display: flex
+				align-items: center
+				&-photo
+					margin-right: 33px
+					width: 4.125rem
+					height: 4.125rem
+					border-radius: 50%
+					overflow: hidden
+					img
+						width: 4.125rem
+						height: 4.125rem
+				&-text
+					&-name
+						font-size: 16px
+						font-weight: 700
+					&-contact
+						font-size: 13px
+						color: #364041
+
+			&-action
+				color: #df4545
+				cursor: pointer
+				font-size: 0.8125rem
+				display: flex
+				align-items: center
+				svg
+					margin-right: 0.4rem
+
+	&-footer
+		background: #f5f5f5
+		border-top: 1px solid #e2e2e2
+		box-sizing: border-box
+		padding: 20px
+		&-heading
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 11px
+			color: #364041
+			margin-bottom: 10px
+		&-description
+			font-size: 13px
+			line-height: 22px
+			color: #000000
+		&-form
+			display: flex
+			.react-datalist-container
+				margin-right: 10px
+				input, datalist
+					width: 300px
+
+	@media(max-width: 720px)
+		&.card-columns
+			flex-direction: column

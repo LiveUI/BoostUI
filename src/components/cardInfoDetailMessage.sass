@@ -1,0 +1,52 @@
+.card-info-detail-message
+	display: flex
+	padding: 20px 0
+	border-bottom: 1px solid #ddddde
+	&-icon
+		flex-grow: 0
+		flex-shrink: 0
+		width: 2.5em
+		height: 2.5em
+		border-radius: 50%
+		overflow: hidden
+		margin-right: 1em
+		img
+			width: 100%
+			height: auto
+
+	&-header
+		display: flex
+		align-items: center
+		&-name
+			font-size: 0.8em
+			font-weight: 700
+			line-height: 1.7em
+			color: #364041
+		&-date
+			font-size: 0.7em
+			color: #878787
+			margin-left: 0.5em
+
+	&-content
+		font-size: 0.8em
+		line-height: 1.7em
+
+	&-item
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		&-form
+			width: 100%
+			-webkit-appearance: none
+			box-sizing: border-box
+			border: 1px solid #b3b3b3
+			border-radius: 4px
+			font-family: inherit
+			padding: 0.6875rem
+			font-size: 0.8125rem
+			&::placeholder
+				color: #364041
+			&:focus
+				outline: none
+		.button
+			align-self: flex-end

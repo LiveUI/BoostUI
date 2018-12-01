@@ -1,0 +1,52 @@
+.page
+	padding-top: 100px
+	position: absolute
+	width: 100%
+	height: 100%
+	box-sizing: border-box
+	overflow: auto
+	&-controls
+		max-width: 1200px
+		width: 90%
+		margin: 0 auto
+		display: flex
+	&-control
+		font-size: 0.875rem
+		text-transform: uppercase
+		font-weight: 700
+		color: #575757
+		border-left: 2px solid #575757
+		padding: 0 0.5rem
+		display: flex
+		align-items: center
+		&.is-active
+			cursor: pointer
+		&:first-child
+			border: none
+			padding-left: 0
+		svg
+			height: 1em
+			width: 1.2em
+			margin-right: 0.5rem
+		&-value
+			background: none
+			-webkit-appearance: none
+			border: none
+			font-size: inherit
+			font-weight: inherit
+			color: #292929
+			text-transform: uppercase
+			cursor: pointer
+			margin-left: 0.2rem
+			&:focus
+				outline: none
+	&-upload
+		display: flex
+		width: 100%
+		height: 100%
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		&-text
+			font-weight: 700
+			color: rgb(41, 49, 50)

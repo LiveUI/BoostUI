@@ -1,0 +1,32 @@
+.button
+	font-family: 'Open Sans', sans-serif
+	font-size: 13px
+	background-color: #236aea
+	color: white
+	border: 1px solid #ddddde
+	border-radius: 4px
+	padding: 10px 15px
+	min-width: 170px
+	cursor: pointer
+	margin: 16px 0
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: 0.2s background
+	svg
+		fill: #ffffff
+		margin-right: 0.5em
+		transition: 0.2s fill
+	.icon
+		margin-right: 0.75em
+	&:hover
+		background: rgba(35, 106, 234, 0.85)
+	&.inactive
+		background: transparent
+		border: 1px solid #2a6ee7
+		svg
+			fill: #2a6ee7
+		&:hover
+			background-color: #236aea
+			svg
+				fill: white

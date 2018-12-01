@@ -1,0 +1,53 @@
+.switch
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, 0.7)
+	z-index: 10001
+	&-close
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+	&-inner
+		background: white
+		display: inline-flex
+		flex-direction: column
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		min-width: 300px
+	&-header
+		display: flex
+		position: relative
+		justify-content: center
+		padding: 22px 36px
+		color: #364041
+		font-weight: 700
+		font-size: 16px
+		&-close
+			position: absolute
+			left: 36px
+			cursor: pointer
+	&-footer
+		text-align: center
+		padding: 32px 0
+		&-button
+			color: #236aea
+			font-size: 13px
+			cursor: pointer
+	.card-content-list-item
+		align-items: center
+		margin: 15px 30px
+		width: 300px
+		.card-content-list-item-text
+			align-self: center
+			color: #364041

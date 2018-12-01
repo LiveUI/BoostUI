@@ -1,0 +1,33 @@
+.AppIcon
+	border-radius: 23%
+	align-self: center
+	flex-grow: 0
+	width: 1em
+	height: 1em
+	border: 1px solid #d9d9d9
+	overflow: hidden
+	display: inline-flex
+	justify-content: center
+	align-items: center
+
+	img
+		width: 100%
+		height: auto
+		display: block
+		margin: 0
+
+	&-img
+		transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s
+		display: block
+		width: 100%
+
+	&.view-loading &-img
+		opacity: 0
+		transform: scale(1.1)
+
+	&-emptyNote
+		font-size: .15em
+		text-transform: uppercase
+		font-weight: bold
+		opacity: .1
+
